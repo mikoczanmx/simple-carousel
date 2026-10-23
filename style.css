@@ -37,6 +37,16 @@
   color: #2878c8;
 }
 
+.next,
+.prev {
+  color: #282a2c;
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1;
+  cursor: pointer;
+  flex: 0 0 auto;
+  transition: color 180ms ease;
+}
+
 .next svg,
 .prev svg {
   display: block;
@@ -44,6 +54,7 @@
   height: 1em;
   fill: currentColor;
 }
+
 button {
   background-color: transparent;
   border: none;
