@@ -9,38 +9,44 @@
   </head>
   <body>
     <h1>Simple Carousel Component</h1>
-    <div class="carousel">
+    <div class="carousel" role="region" aria-label="Karuzela zdjęć">
       <div class="content">
-        <button class="prev">&lt;</button>
+        <button class="prev" type="button" aria-label="Poprzedni slajd">
+          &lt;
+        </button>
         <div class="slides">
-          <img
-            src="https://picsum.photos/id/237/750/450"
-            alt="e"
-            class="slide"
-          />
-          <img
-            src="https://picsum.photos/id/238/750/450"
-            alt="e"
-            class="slide"
-          />
-          <img
-            src="https://picsum.photos/id/230/750/450"
-            alt="e"
-            class="slide"
-          />
-          <img
-            src="https://picsum.photos/id/240/750/450"
-            alt="e"
-            class="slide"
-          />
+          <div class="slide-track">
+            <img
+              src="https://picsum.photos/id/237/750/450"
+              alt="Slajd 1"
+              class="slide"
+            />
+            <img
+              src="https://picsum.photos/id/238/750/450"
+              alt="Slajd 2"
+              class="slide"
+            />
+            <img
+              src="https://picsum.photos/id/230/750/450"
+              alt="Slajd 3"
+              class="slide"
+            />
+            <img
+              src="https://picsum.photos/id/240/750/450"
+              alt="Slajd 4"
+              class="slide"
+            />
+          </div>
         </div>
-        <button class="next">&gt;</button>
+        <button class="next" type="button" aria-label="Następny slajd">
+          &gt;
+        </button>
       </div>
-      <div class="dots">
-        <button class="dot">&#9679;</button>
-        <button class="dot">&#9679;</button>
-        <button class="dot">&#9679;</button>
-        <button class="dot">&#9679;</button>
+      <div class="dots" role="group" aria-label="Wybierz slajd">
+        <button class="dot" type="button" aria-label="Slajd 1">&#9679;</button>
+        <button class="dot" type="button" aria-label="Slajd 2">&#9679;</button>
+        <button class="dot" type="button" aria-label="Slajd 3">&#9679;</button>
+        <button class="dot" type="button" aria-label="Slajd 4">&#9679;</button>
       </div>
     </div>
   </body>
