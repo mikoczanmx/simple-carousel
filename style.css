@@ -19,7 +19,8 @@
   gap: 30px;
 }
 .slide {
-  width: 75%;
+  width: 100%;
+  max-height: 450px;
   padding: 20xp;
   margin: 15px;
   border-radius: 20px;
@@ -61,4 +62,10 @@ button:hover {
 h1 {
   text-align: center;
   margin-bottom: 35px;
+}
+.slides {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
